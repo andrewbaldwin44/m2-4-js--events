@@ -35,7 +35,7 @@ function calculateClues() {
   let currentRow = document.querySelector(`#pegs-row-${currentRowIndex}`);
   let guessedColors = [...currentRow.children].map(peg => peg.style.backgroundColor);
 
-  let answerKey = Array.from(masterCode);
+  let answerKey = [...masterCode];
   let clues = [];
 
   guessedColors.forEach((color, index) => {
@@ -50,9 +50,10 @@ function calculateClues() {
     window.alert('You win!!!!');
   }
   else {
-    guessedColors.forEach(color => {
+    guessedColors.forEach((color, index) => {
       if (answerKey.includes(color)) {
         clues.push('green');
+        delete answerKey[answerKey.indexOf(color)];
       }
     });
   }
