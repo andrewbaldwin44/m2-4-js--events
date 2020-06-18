@@ -1,25 +1,27 @@
 .scroll-button {
   position: absolute;
-  font-size: 80px;
+  font-size: 60px;
+  font-weight: lighter;
   border: none;
   background-color: transparent;
   color: var(--main-black);
   cursor: pointer;
   outline: none;
+  z-index: 100;
 }
 
 .switch-timer-button {
-  right: 50px;
+  right: 0;
 }
 
 .switch-stopwatch-button {
-  left: 50px;
+  left: 0;
 }
 
 @keyframes stopwatchScrollLeft {
   20% {opacity: 0;}
   to{
-    transform: translateX(-100%);
+    transform: translateX(-80%);
     opacity: 0;
     visibility: hidden;
   }
@@ -27,7 +29,7 @@
 
 @keyframes timerScrollLeft {
   from {
-    transform: translateX(100%);
+    transform: translateX(80%);
     opacity: 0;
   }
   25% {
@@ -43,7 +45,7 @@
 
 @keyframes stopwatchScrollRight {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-80%);
     opacity: 0;
   }
   25% {
@@ -66,15 +68,31 @@
     opacity: 0;
   }
   to {
-    transform: translateX(200%);
+    transform: translateX(80%);
     opacity: 0;
     visibility: hidden;
   }
 }
 
+@media (min-width: 736px) {
+  .scroll-button {
+    cursor: inherit;
+  }
 
+  .switch-timer-button {
+    right: 15%;
+  }
 
-@media (min-width: 810px) {
+  .switch-stopwatch-button {
+    left: 15%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .scroll-button {
+    cursor: inherit;
+  }
+
   .switch-timer-button {
     right: 25%;
   }

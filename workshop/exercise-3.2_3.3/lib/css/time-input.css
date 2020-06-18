@@ -1,7 +1,7 @@
 .time-input {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -9,12 +9,8 @@
 }
 
 .time-element-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100%;
-  padding: 10px;
+  width: 25%;
 }
 
 .time-element {
@@ -43,7 +39,6 @@
 }
 
 .time-selector {
-  margin: auto;
   font-size: 30px;
   max-height: inherit;
 }
