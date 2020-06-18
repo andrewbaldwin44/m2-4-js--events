@@ -20,7 +20,7 @@ body {
   height: 80px;
   width: 300px;
   margin-bottom: 30px;
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 .master-code-peg {
@@ -180,7 +180,7 @@ body {
 
   .master-code-container {
     justify-content: space-between;
-    width: 80vw;
+    width: 70vw;
     height: 8vh;
     margin: 10px 0;
     padding: 10px 10px;
