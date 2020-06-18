@@ -24,7 +24,7 @@ class Board {
 
   createPegs() {
     let pegsContainer = document.createElement('div');
-    pegsContainer.classList.add('pegsContainer');
+    pegsContainer.classList.add('pegs-container');
 
     for (let p = 0; p < 4; p++) {
       let peg = document.createElement('div');
@@ -41,7 +41,7 @@ class Board {
 
   createClues() {
     let cluesContainer = document.createElement('div');
-    cluesContainer.classList.add('cluesContainer');
+    cluesContainer.classList.add('clues-container');
 
     for (let c = 0; c < 4; c++) {
       let clue = document.createElement('div');
