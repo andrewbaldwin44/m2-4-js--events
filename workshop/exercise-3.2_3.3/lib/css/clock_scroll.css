@@ -1,0 +1,85 @@
+.scroll-button {
+  position: absolute;
+  font-size: 80px;
+  border: none;
+  background-color: transparent;
+  color: var(--main-black);
+  cursor: pointer;
+  outline: none;
+}
+
+.switch-timer-button {
+  right: 50px;
+}
+
+.switch-stopwatch-button {
+  left: 50px;
+}
+
+@keyframes stopwatchScrollLeft {
+  20% {opacity: 0;}
+  to{
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes timerScrollLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  25% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes stopwatchScrollRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  25% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+@keyframes timerScrollRight {
+  0% {
+    visibility: visible;
+  }
+  20% {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(200%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+@media (min-width: 810px) {
+  .switch-timer-button {
+    right: 25%;
+  }
+
+  .switch-stopwatch-button {
+    left: 25%;
+  }
+}
