@@ -1,3 +1,9 @@
-// Exercise 1.1
-// ------------
-console.log('exercise 1.1');
+let result = 'You lose!';
+
+window.onclick = function(e) {
+  result = 'You won!!';
+}
+
+setTimeout(() => {
+  alert(result);
+}, 1000);
