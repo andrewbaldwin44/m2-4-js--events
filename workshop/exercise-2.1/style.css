@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: red;
+  border: 5px solid black;
+  font-size: 30px;
+  margin: 10px;
+  width: 20vw;
+  height: 10vh;
+}
