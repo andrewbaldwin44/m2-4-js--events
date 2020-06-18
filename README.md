@@ -2,6 +2,11 @@
 
 If you are unsure of what the outcome is supposed to be, you can always launch the solution to see what I did in the browser. This isn't cheating... unless you steal all of my wonderful design ideas!!! 😜
 
+## Demos
+
+[View Stopwatch-Timer Live](https://andrewbaldwin44.github.io/Javascript_Stopwatch_App/)<br>
+[View Mastermind Live](https://andrewbaldwin44.github.io/Javascript_Mastermind/)
+
 ## Exercise 1.0 - Warm up
 
 <img src="__lecture/assets/exercise-1.0.gif" />
