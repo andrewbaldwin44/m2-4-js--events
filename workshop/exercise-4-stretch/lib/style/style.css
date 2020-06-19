@@ -64,17 +64,8 @@ body {
   width: 60%;
 }
 
-.pegs-container:disabled .peg {
+.disabled .peg {
   cursor: default;
-}
-
-.pegs-container:disabled {
-  cursor: none;
-}
-
-.pegsContainer:disabled {
-  background-color: purple;
-  cursor: none;
 }
 
 .clues-container {
@@ -139,6 +130,7 @@ body {
 }
 
 .instructions-container {
+  font-size: 1.2em;
   box-sizing: border-box;
   position: absolute;
   z-index: 100;
@@ -146,22 +138,22 @@ body {
   width: 90%;
   background-color: white;
   border: 10px solid black;
-  line-height: 1.4;
-  padding: 20px 20px;
+  line-height: 1.2;
+  padding: 10px 20px;
 }
 
 .instructions-head {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .close-instructions {
   position: absolute;
   cursor: pointer;
-  font-size: 34px;
+  font-size: 1.4em;
   top: 0;
-  right: 10px;
+  right: 20px;
 }
 
 .red-text {
@@ -170,6 +162,24 @@ body {
 
 .green-text {
   color: green;
+}
+
+@media (max-width: 1615px) {
+  .instructions-container {
+    font-size: 1em;
+  }
+
+  .instructions-head {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 930px) {
+  .instructions-container {
+    font-size: 0.9em;
+    line-height: 1.2;
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 760px) {
